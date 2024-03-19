@@ -1,13 +1,153 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+    --gray-200: #D3D8DC;
+    --gray-900: #1A1919;
+    --primary: #316FEA;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: url('./assets/fonts/BasisGrotesquePro-Regular.ttf');
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: url('./assets/fonts/BasisGrotesquePro-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'BasisGrotesquePro';
+    src: url('./assets/fonts/BasisGrotesquePro-Bold.ttf');
+    font-weight: 700;
+}
+
+body {
+  margin: 0;
+  font-family: 'BasisGrotesquePro';
+}
+
+.container {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 8vh;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 430px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+form {
+    width: 100%;
+}
+
+.forgot-password-link {
+    color: var(--primary);
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    margin-bottom: 30px;
+    float: right;
+    text-align: right;
+    text-decoration: none;
+}
+
+.cancel-btn {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    border: 1px solid var(--gray-200);
+    color: #060E1E;
+    cursor: pointer;
+    display: flex;
+    font-size: 16px;
+    font-weight: 500;
+    justify-content: center;
+    height: 48px;
+    line-height: 21px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-transform: capitalize;
+    width: 100%;
+}
+
+.signup-link {
+    color: var(--gray-900);
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.signup-link a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.divider {
+    color: #BEC5CC;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.divider::before,
+.divider::after {
+    background-color: #BEC5CC;
+    content: '';
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: calc(50% - 14px);
+}
+
+.divider::before {
+    left: 0;
+}
+
+.divider::after {
+    right: 0;
+}
+
+.controls {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    width: 100%;    
+}
+
+.controls button {
+    align-items: center;
+    background-color: #fff;
+    border: 1px solid var(--gray-200);
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    gap: 10px;
+    flex-grow: 1;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    justify-content: center;
+    height: 48px;
+    width: 50%;
 }

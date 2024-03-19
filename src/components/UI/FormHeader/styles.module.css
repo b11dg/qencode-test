@@ -1,0 +1,15 @@
+.formHeader {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.title {
+    color: var(--gray-900);
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+    margin-top: 80px;
+    margin-bottom: 40px;
+    text-align: center;
+}
