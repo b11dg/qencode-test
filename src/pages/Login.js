@@ -20,7 +20,7 @@ const Login = () => {
         </div>
         <div className='divider'>or</div>
         <LoginForm/>
-        <p className='signup-link'>Is your company new to Qencode? <a href="#">Sign up</a></p>
+        <p className='signup-link'>Is your company new to Qencode? <a href="/">Sign up</a></p>
     </div>
   );
 };
